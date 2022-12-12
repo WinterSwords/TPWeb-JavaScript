@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="fr">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,32 +9,43 @@
     </head>
     <body>
         <header id="mainHeader">
+            <!-- Logo clickable (retour à la page d'accueil) -->
             <a href="index.html">
                 <img src="http://cdn.onlinewebfonts.com/svg/img_497562.png" alt="Logo de film" id="logoImg"/>
             </a>
             <h1>Filmothèque</h1>
             <nav id="mainNav">
-                <h1 class="accessibility">Menu principal</h1>
-                <p class="accessibility"><a href="#pageContent" title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
+                <h1 class="accessibility">Page d'information du film</h1>
+                <!-- Bouton retour à la page d'accueil -->
                 <ul>
                     <li><a href="index.html"><button id="retour">Retour</button></li></a>
                 </ul>
             </nav>
-        </header><!--Ici se termine le #mainHeader-->
+        </header>
+        <!-- 
+            Comment avoir les données du film :
+                -nom dans l'url → 2nd requête + pb pour homonymes
+                -Partager un json :
+                    -créer un fichier ? → solution pas belle
+                    -juste le texte → Comment faire ?
+        -->
         <section class="infoFilm">
             <main>
                 <h1>Information sur le film</h1>
+                <!-- ul pour l'intégration des informations du film générer par le JavaScript -->
                 <ul id="films"></ul>
+                <!-- modèle pour le JavaScript-->
                 <ul>
-                    <li class="affiche">
-                        <h2>Bretagne 2019</h2>
+                    <li>
+                        <h2>Titre du film</h2>
                         <img src="ressourses/Démon.jpg" alt="Image de démon, elle est classe">
                     </li>
                     <li>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quam dignissimos! Excepturi facilis ipsa quae cupiditate totam quasi enim aliquam vero? Voluptatem cum quas quis minima deserunt, explicabo dolorum nihil?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quam dignissimos! Excepturi facilis ipsa quae cupiditate totam quasi enim aliquam vero? Voluptatem cum quas quis minima deserunt, explicabo dolorum nihil? C'est un belle image que j'ai trouvé en recherchant des images de dragon, où on se dit : "Pouah ! Classe !", et vu que c'est ce que je m'étais dit, je l'ai pris, car les dragons ne servaient que d'axe de recherche<br><br>
+                        (Info du film)
                     </li>
                 </ul>
             </main>
-        </section><!--Ici se termine le #pageContent-->
+        </section>
     </body>
 </html>

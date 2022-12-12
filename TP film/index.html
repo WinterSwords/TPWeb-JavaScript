@@ -10,35 +10,35 @@
     </head>
     <body>
         <header id="mainHeader">
+            <!-- Logo clickable (retour à la page d'accueil) -->
             <a href="index.html">
                 <img src="http://cdn.onlinewebfonts.com/svg/img_497562.png" alt="Logo de film" id="logoImg"/>
             </a>
             <h1>Filmothèque</h1>
             <nav id="mainNav">
                 <h1 class="accessibility">Menu principal</h1>
-                <p class="accessibility"><a href="#pageContent" title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
                 <ul>
                     <li><input type="text" name="recher" id="recher"></li>
                     <li><button id="btnRech">Rechercher</button></li>
                 </ul>
             </nav>
-        </header><!--Ici se termine le #mainHeader-->
-
-        
+        </header>
         <section class="filmo">
             <main>
                 <h1>Liste des films</h1>
+                <!-- ul pour l'intégration de la liste des films générer par le JavaScript -->
                 <ul id="films"></ul>
+                <!-- modèle pour le JavaScript-->
                 <ul>
                     <li>
                         <a href="film.html?film=Démon">
                             <h2>Nom du film</h2>
-                            <img src="ressourses/Démon.jpg" alt="Bretagne 2019">
+                            <img src="ressourses/Démon.jpg" alt="Nom du film">
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut porro cupiditate fuga! Laudantium sapiente minima dolores modi inventore consectetur sint eos distinctio mollitia unde, nostrum quas animi ipsam id dolorum!</p>
                         </a>
                     </li>
                 </ul>
             </main>
-        </section><!--Ici se termine le #pageContent-->
+        </section>
     </body>
 </html>
