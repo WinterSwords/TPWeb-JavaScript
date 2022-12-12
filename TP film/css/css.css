@@ -116,6 +116,11 @@ section ul li{
 section ul li a{
     color: var(--black);
     text-decoration: none;
+    text-align: center;
+}
+section ul li a img{
+    display: block;
+    margin: auto;
 }
 .filmo ul li:hover{
     background-color: var(--shaded-red);
